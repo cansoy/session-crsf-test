@@ -1,0 +1,24 @@
+###
+GET http://127.0.0.1:3000/
+
+###
+GET http://127.0.0.1:3000/users
+
+###
+GET http://127.0.0.1:3000/todos
+
+###
+POST http://127.0.0.1:3000/login
+Content-Type: application/x-www-form-urlencoded
+
+name=muhammed&surname=cansoy
+
+###
+GET http://127.0.0.1:3000/logout
+
+###
+DELETE http://127.0.0.1:3000/delete-simple
+
+###
+DELETE http://127.0.0.1:3000/delete-session
+
