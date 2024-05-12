@@ -4,6 +4,8 @@ const session =require("express-session")
 const MongoDBStore=require("connect-mongodb-session")(session)
 const server=express()
 
+const PORT =process.env.PORT || 3000
+
 server.set("etag",false)
 server.set("view engine","ejs")
 server.set("views","./views")
@@ -99,4 +101,4 @@ server.delete("/delete-session",(req,res)=>{
     
 })
 
-server.listen(3000,()=>console.log("***************************"))
+server.listen(PORT,()=>console.log("***************************"))
