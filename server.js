@@ -33,7 +33,6 @@ server.use(session({
 }))
 
 server.get("/login",(req,res)=>{
-    console.log(req.sessionID)
     res.render("login")
 })
 
@@ -101,4 +100,4 @@ server.delete("/delete-session",(req,res)=>{
     
 })
 
-server.listen(PORT,()=>console.log("***************************"))
+server.listen(PORT,()=>console.log("***************************",PORT))
