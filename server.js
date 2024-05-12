@@ -28,7 +28,7 @@ server.use(session({
         httpOnly:true,
         secure:false,
         sameSite:"strict",
-        maxAge:10*1000,
+        maxAge:50*1000,
     }
 }))
 
